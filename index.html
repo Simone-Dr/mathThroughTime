@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	
+	<title>Math through time</title>
+</head>
+<body>
+	
+	<div class="box"  id="About Me">
+    	<h2>Math through Time and Space</h2>
+    	<p class="text"> Welcome to an interactive journey through the development of math.
+    	</p>
+  	</div>
+
+  	
+  	<div class="color outer" id="babylonianNumerals">
+	    <div class="box ">
+	    	<h2 >Babylonian Numerals</h2>
+	        <div class= "flexbox">  
+	        	<div class = "left">
+	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system, the position of the didget determines wheater it is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
+	        	</div>
+		        	  
+		        <div class = "intContainer">				
+	        		<div>
+						<input type="number" id="dec" name="dec" min="0" value = "1"style= "margin-top: 10px"> 
+						<button class="button" onclick = "input(getElementById('dec').value)">submit</button>
+						<p id="inpDecimal" style="margin: 2px; ;">Write positive integer (Decimal)</p>
+						<p id="decimal" style="margin: 2px;"></p>
+						<p id="stepDecimal"style="margin: 2px; margin-bottom: 10px;"></p>
+					</div>
+	        		<div class= "light">
+	        			<p id="toSexagesimal" style="margin: 2px; padding-top: 10px">To Sexagesimal:</p>
+	        			<p id="sexagesimal" style="margin: 2px;"></p>
+	        			<p id="stepSexagesimal" style="margin: 2px;"></p>
+						<div id="drawSexagesimal" style="margin: 2px;"></div>
+					</div>				
+	          	</div>  
+	      	</div>         
+		</div>
+  	</div>
+  	<div class="color outer" id="pythagoreanTheorem">
+	    <div class="box ">
+	    	<h2 >Pythagorean Theorem</h2>
+	        <div class= "flexbox">  
+	        	<div class = "left">
+	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system, the position of the didget determines wheater it is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
+	        	</div>
+		        <div> 
+			        <h4 style = "text-align: center; margin : 0;">Click</h4> 
+			        <p> 2ab + <span style="color:#0b7fab"> c <sup>2</sup> </span> = 2ab + <span style="color:#f4d75e"> a <sup>2</sup> </span>+ <span style="color:#e9723d"> b <sup>2</sup> </span> </p>
+			        <p> <span style="color:#0b7fab"> c <sup>2</sup> </span> = <span style="color:#f4d75e"> a <sup>2</sup> </span>+ <span style="color:#e9723d"> b <sup>2</sup> </span> </p>
+			        <div class = "Container" id="pythagoreanTheoremCanvas"></div>  
+		       </div>
+	      	</div>         
+		</div>
+  	</div>
+
+  	<div class="color outer" id="irratonalNumbers">
+	    <div class="box ">
+	    	<h2 >Hippasus and the irratonal numbers</h2>
+	        <div class= "flexbox">  
+	        	<div class = "left">
+	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system , the position of the didget determines wheater is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
+	        	</div>
+		        <div>
+		        	<input type="range" class= "slider" id="theoSlider" min="1" max="200" value = "16" >
+		        	<p style= "margin: 0; float: right" id = "outTheo"></p>		
+		        	<p style= "margin: 0; float: left" >Number:</p>
+			        <div class = "Container" id="TheodorusOfCyrene"></div>  
+		       </div>
+	      	</div>         
+		</div>
+  	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<script src="babylonianNumerals.js"></script>
+<script src="pythagoreanTheorem.js"></script>
+<script src="irratonalNumbers.js"></script>
+</html>

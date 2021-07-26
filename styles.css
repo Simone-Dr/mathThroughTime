@@ -1,0 +1,77 @@
+body {
+  font-family: 'Abel';
+  margin: 0;
+  font-size:16px;
+  line-height:1.5; 
+  color: rgb(40,40,40); 
+  background: #F4F4F4; 
+  overflow-x: hidden;
+}
+
+
+.outer {
+  padding: 30px 16px 30px;
+}
+
+.color {
+  background-color: rgb(40,40,40);
+  color: #F4F4F4;
+}
+
+.box{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 900px; 
+  position: relative;
+}
+
+.left {
+  text-align: left;
+  padding: 10px;
+  width: 100%
+}
+
+.intContainer{
+  background: dimgrey;
+  width: 100%;
+  height: auto;
+  border-style: groove;
+}
+
+.Container{
+  width: 100%;
+  height: auto;
+  max-width: 35%;
+  max-height: 35%;
+}
+.light{
+  background: lightgray;
+  color: black;
+}
+
+.flexbox {
+  display: flex; 
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flexbox {
+    flex-direction: column;
+  }
+  .pyContainer{
+    max-width: 100%;
+  }
+
+}
+
+#drawSexagesimal{
+  padding:  0px;
+  scale: 0.7;
+}
+
+#drawSexagesimal > img  {
+  margin: 0;
+  padding: 0;
+  scale: 1;
+} 
