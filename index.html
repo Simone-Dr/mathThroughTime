@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<title>Math through time</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+
 </head>
 <body>
 	
 	<div class="box"  id="About Me">
-    	<h2>Math through Time and Space</h2>
+    	<h2>Math through Time</h2>
     	<p class="text"> Welcome to an interactive journey through the development of math.
     	</p>
   	</div>
@@ -77,11 +78,59 @@
 		</div>
   	</div>
 
+
+  	<div class="color outer" id="euclid">
+	    <div class="box ">
+	    	<h2 >Euclid's Elements</h2>
+	        <div class= "flexbox">  
+	        	<div class = "left">
+	        		<p> It is required to construct an equilateral triangle on a given finite straight line <img src="graphics/euclid/orange.png"></img>.
+					
+
+Describe the circle BCD with center A and radius AB. Again describe the circle ACE with center B and radius BA. Join the straight lines CA and CB from the point C at which the circles cut one another to the points A and B.
+I.Def.15
+
+Now, since the point A is the center of the circle CDB, therefore AC equals AB. Again, since the point B is the center of the circle CAE, therefore BC equals BA.
+
+But AC was proved equal to AB, therefore each of the straight lines AC and BC equals AB.
+C.N.1
+
+And things which equal the same thing also equal one another, therefore AC also equals BC.
+
+Therefore the three straight lines AC, AB, and BC equal one another.
+I.Def.20
+
+Therefore the triangle ABC is equilateral, and it has been constructed on the given finite straight line AB.   https://www.c82.net
+	        			<img src="graphics/euclid/blue.png"></img>
+	        			<img src="graphics/euclid/orange.png"></img>
+	        		 	<img src="graphics/euclid/green.png"></img></p>
+	        	</div>
+		        <div>
+			        <div class = "Container" id="euclidCanv"></div>  
+		       </div>
+	      	</div>         
+		</div>
+  	</div>
+
+  	<div class="color outer" id="sieve">
+	    <div class="box ">
+	    	<h2 >The sieve of Erathostenes</h2>
+	        <div class= "flexbox">  
+	        	<div class = "left">
+	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system , the position of the didget determines wheater is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
+	        	</div>
+		        <div>
+			        <div class = "Container" id="eraSieve"></div>  
+		       </div>
+	      	</div>         
+		</div>
+  	</div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-<script src="babylonianNumerals.js"></script>
-<script src="pythagoreanTheorem.js"></script>
-<script src="irratonalNumbers.js"></script>
+<script src="src/babylonianNumerals.js"></script>
+<script src="src/pythagoreanTheorem.js"></script>
+<script src="src/irratonalNumbers.js"></script>
+<script src="src/euclid.js"></script>
+<script src="src/sieveEratosthenes.js"></script>
 </html>
