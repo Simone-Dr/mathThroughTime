@@ -66,7 +66,8 @@ const t = sie => {
       sie.fill("#282828");
       sie.text(this.num, this.posX+30/5, this.posY+30/2);
     }
-  }  
+  }
+
 }
 new p5(t); 
 

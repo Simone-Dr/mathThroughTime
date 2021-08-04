@@ -26,7 +26,7 @@
 	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system, the position of the didget determines wheater it is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
 	        	</div>
 		        	  
-		        <div class = "intContainer">				
+		        <div class = "intContainer" style = "margin:0px auto">				
 	        		<div>
 						<input type="number" id="dec" name="dec" min="0" value = "1"style= "margin-top: 10px"> 
 						<button class="button" onclick = "input(getElementById('dec').value)">submit</button>
@@ -51,10 +51,10 @@
 	        	<div class = "left">
 	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system, the position of the didget determines wheater it is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
 	        	</div>
-		        <div> 
-			        <h4 style = "text-align: center; margin : 0;">Click</h4> 
+		        <div style = "margin:0px auto"> 
 			        <p> 2ab + <span style="color:#0b7fab"> c <sup>2</sup> </span> = 2ab + <span style="color:#f4d75e"> a <sup>2</sup> </span>+ <span style="color:#e9723d"> b <sup>2</sup> </span> </p>
 			        <p> <span style="color:#0b7fab"> c <sup>2</sup> </span> = <span style="color:#f4d75e"> a <sup>2</sup> </span>+ <span style="color:#e9723d"> b <sup>2</sup> </span> </p>
+			        <h4 style = "text-align: center; margin : 0;">Click ↓</h4> 
 			        <div class = "Container" id="pythagoreanTheoremCanvas"></div>  
 		       </div>
 	      	</div>         
@@ -68,7 +68,7 @@
 	        	<div class = "left">
 	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system , the position of the didget determines wheater is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
 	        	</div>
-		        <div>
+		        <div style = "margin:0px auto">
 		        	<input type="range" class= "slider" id="theoSlider" min="1" max="200" value = "16" >
 		        	<p style= "margin: 0; float: right" id = "outTheo"></p>		
 		        	<p style= "margin: 0; float: left" >Number:</p>
@@ -83,31 +83,30 @@
 	    <div class="box ">
 	    	<h2 >Euclid's Elements</h2>
 	        <div class= "flexbox">  
-	        	<div class = "left">
-	        		<p> It is required to construct an equilateral triangle on a given finite straight line <img src="graphics/euclid/orange.png"></img>.
-					
-
-Describe the circle BCD with center A and radius AB. Again describe the circle ACE with center B and radius BA. Join the straight lines CA and CB from the point C at which the circles cut one another to the points A and B.
-I.Def.15
-
-Now, since the point A is the center of the circle CDB, therefore AC equals AB. Again, since the point B is the center of the circle CAE, therefore BC equals BA.
-
-But AC was proved equal to AB, therefore each of the straight lines AC and BC equals AB.
-C.N.1
-
-And things which equal the same thing also equal one another, therefore AC also equals BC.
-
-Therefore the three straight lines AC, AB, and BC equal one another.
-I.Def.20
-
-Therefore the triangle ABC is equilateral, and it has been constructed on the given finite straight line AB.   https://www.c82.net
-	        			<img src="graphics/euclid/blue.png"></img>
-	        			<img src="graphics/euclid/orange.png"></img>
-	        		 	<img src="graphics/euclid/green.png"></img></p>
-	        	</div>
+	        	<div class = "eucLeft left" style="max-width:35%">
+	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system , the position of the didget determines wheater is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. https://www.c82.net </p>        		
+		        </div> 
 		        <div>
-			        <div class = "Container" id="euclidCanv"></div>  
-		       </div>
+		        	<h4>Proposition I. </h4>
+		        	<p style = " font-size:16px;   line-height:1.5; "> 			        	
+						On a given finite straight line (<img class="eucLine" src="graphics/euclid/orange.png">) to describe an equilateral triangle. 
+						<button class="button" onclick = "setState(0);">click</button> <br>
+						Describe <img class= "eucLine" style = "width: 70px; height: auto;scale:0.65; top: 25px;" src="graphics/euclid/whiteCircle.png"></img> and <img class= "eucLine" style = "width: 70px; height: auto; scale:0.65; top: 25px;" src="graphics/euclid/greyCircle.png"></img>.
+						<button class="button" onclick = "setState(1);">click</button> <br>
+						Draw<img class="eucLine" src="graphics/euclid/blue.png"></img> and <img class="eucLine" src="graphics/euclid/green.png"></img> then <img class= "eucLine" style = "scale: 0.7; top: 15px;"src="graphics/euclid/triangle.png"></img> will be equilateral. <button class="button" style = "" onclick = "setState(2);">click</button> <br><br>
+					</p>
+
+			        <div style = "max-width:  100%; width: 300px; height: 200px; margin:0px auto; border-style: solid; border-color: #222222;"class = "Container" id="euclidCanv"></div>
+			        
+					<p style = " font-size:16px;   line-height:1.5; ">
+						For <img class="eucLine" src="graphics/euclid/orange.png"></img> = <img class="eucLine" src="graphics/euclid/blue.png"></img><br>
+						And <img class="eucLine" src="graphics/euclid/orange.png"></img> = <img class="eucLine" src="graphics/euclid/green.png"></img><br>
+						Therefore <img class="eucLine" src="graphics/euclid/blue.png"></img> = <img class="eucLine" src="graphics/euclid/green.png"></img><br>
+						Therefore <img class="eucLine" src="graphics/euclid/orange.png"></img> = <img class="eucLine" src="graphics/euclid/blue.png"></img> = <img class="eucLine" src="graphics/euclid/green.png"></img><br><br>
+
+						Therefore the triangle <img class= "eucLine" style = "scale: 0.7; top: 15px;" src="graphics/euclid/triangle.png"></img> is equilateral, and it has been constructed on the given finite straight line <img class="eucLine" src="graphics/euclid/orange.png"></img>.  			
+	        		 </p>
+	        	</div>
 	      	</div>         
 		</div>
   	</div>
@@ -120,7 +119,7 @@ Therefore the triangle ABC is equilateral, and it has been constructed on the gi
 	        		<p> We start our journey through time and space around 3500 BC with the civilisation of the sumer and later on the babylonians, who developed an innovation to numeral systems. They introduced the positional notation. The value of every didget is determined by the symbol, as well as its position within the number. In our modern decimal system, also called Hindu–Arabic numeral system , the position of the didget determines wheater is multiplied by 1, 10, 100... The Babylonians used base 60 and made calculations more efficent, because a huge amount of numbers can be displayed with less digits. The first known positional numeral system still influences us today: there are 60 minutes in an hour and 360 degrees in a circle. </p>
 	        	</div>
 		        <div>
-			        <div class = "Container" id="eraSieve"></div>  
+			        <div style = "margin:0px auto" class = "Container" id="eraSieve"></div>  
 		       </div>
 	      	</div>         
 		</div>

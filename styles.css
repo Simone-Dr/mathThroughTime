@@ -66,6 +66,10 @@ body {
   .pyContainer{
     max-width: 100%;
   }
+  .eucLeft{
+    max-width: 100% !important;
+    padding-right: 0px !important;
+  }
 
 }
 
@@ -79,3 +83,12 @@ body {
   padding: 0;
   scale: 1;
 } 
+
+.eucLine{
+  position: relative;
+  top: 7.5px;
+  width:  80px;
+}
+.eucLeft{
+  padding-right: 40px;
+}
