@@ -30,6 +30,9 @@ const u = euc => {
       bfinsihed = false;
       bfinsihed = true;
       drawBase();
+      euc.strokeWeight(3);
+      euc.stroke(" #808080"); 
+      euc.circle(190, 100, 160); 
     }
   }
   
@@ -50,6 +53,8 @@ const u = euc => {
     aha-= 0.07;
     euc.push();
       euc.strokeWeight(3);
+      euc.stroke(" #808080"); 
+      euc.circle(190, 100, 160);
       euc.stroke("#e9723d");
       euc.translate(190, 100);
       euc.rotate(aha);
@@ -67,7 +72,9 @@ const u = euc => {
 
   drawLines = function(){
     drawBase();  
-    euc.strokeWeight(3);  
+    euc.strokeWeight(3); 
+    euc.stroke(" #808080"); 
+    euc.circle(190, 100, 160); 
     euc.stroke("#0b7fab");
     euc.line(110, 100, 150, 30.71797);
     euc.stroke("#81F781");
@@ -87,8 +94,6 @@ const u = euc => {
     euc.strokeWeight(3); 
     euc.stroke("#cccccc"); 
     euc.circle(110, 100, 160);
-    euc.stroke(" #808080"); 
-    euc.circle(190, 100, 160);
     euc.stroke("#e9723d");
     euc.line(110, 100, 190, 100);
     euc.strokeWeight(8);     
