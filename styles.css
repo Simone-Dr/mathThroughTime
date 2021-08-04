@@ -70,7 +70,6 @@ body {
     max-width: 100% !important;
     padding-right: 0px !important;
   }
-
 }
 
 #drawSexagesimal{
@@ -91,4 +90,9 @@ body {
 }
 .eucLeft{
   padding-right: 40px;
+}
+
+#outEgy{
+  margin-top: 170px;
+  font-size: 21px;
 }
