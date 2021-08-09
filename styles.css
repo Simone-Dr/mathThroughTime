@@ -8,6 +8,24 @@ body {
   overflow-x: hidden;
 }
 
+span>.hoverImg { display: none; }
+span>.hoverText { display: none; }
+span:hover>.hoverImg { display: block; }
+span:hover>.hoverText{display: blocK;}
+
+.hoverText{
+  width:  90%;
+  padding:  5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  color: #F4F4F4; 
+
+}
+
 ::selection {
   background: #e9723d; 
   color: rgb(40,40,40); 
@@ -15,6 +33,17 @@ body {
 
 .outer {
   padding: 30px 16px 30px;
+}
+
+.hoverImg{
+  width:  90%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hoverSpan{
+  color: #e9723d;
 }
 
 .color {
@@ -33,6 +62,7 @@ body {
 .left {
   text-align: left;
   padding: 10px;
+  padding-right: 20px;
   width: 100%
 }
 
@@ -40,6 +70,7 @@ body {
   background: dimgrey;
   width: 100%;
   height: auto;
+  max-height: 420px;
   border-style: groove;
 }
 
