@@ -101,6 +101,9 @@ span:hover>.hoverText{display: blocK;}
     max-width: 100% !important;
     padding-right: 0px !important;
   }
+
+  span>.hoverImg { display: blocK; }
+  span>.hoverText { display: blocK; }
 }
 
 #drawSexagesimal{
