@@ -52,6 +52,16 @@ const t = sie => {
           }        
         }
       }
+
+      if ((numbers[2].col == "#e9723d") && (numbers[3].col == "#e9723d") 
+        &&(numbers[5].col == "#e9723d") && (numbers[7].col == "#e9723d")){
+        for (let i = 1; i < 101; i++) {
+          if (numbers[i].prime){
+            numbers[i].change("#e9723d", 1); 
+          }
+        }
+      }
+
     }
 
     change(s, b){

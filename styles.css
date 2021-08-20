@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  color: #e9723d;
+}
+
 span>.hoverImg { display: none; }
 span>.hoverText { display: none; }
 span:hover>.hoverImg { display: block; }
