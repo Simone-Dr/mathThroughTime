@@ -2,7 +2,7 @@ const uC = agy => {
 
   let textSize = 25;
   agy.setup = function() {
-    var canv = agy.createCanvas(300, 300);
+    var canv = agy.createCanvas(300, 260);
     canv.parent("egyptianMultiplic");
     agy.background("#282828"); 
     agy.fill(255);
